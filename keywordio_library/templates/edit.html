@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block indexacti %}
+active
+{% endblock indexacti %}
+{% block title %}
+edit
+{% endblock title %}
+{% block body %}
+<form method="POST" class="post-form" action="/update/{{library.id}}">  
+        {% csrf_token %}   
+      <div class="mx-auto" style="width: 500px" >
+      
+<br>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <h3>Update Details</h3>  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Book Id:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="eid" id="id_eid" required maxlength="100" value="{{ library.eid }}"/>  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Book Name:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="name" id="id_ename" required maxlength="100" value="{{ library.name }}" />  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Book Author:</label>  
+    <div class="col-sm-4">  
+        <input type="text" name="author" id="id_author" required maxlength="100" value="{{ library.author }}" />  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Year:</label>  
+    <div class="col-sm-4">  
+        <input type="number" name="year" id="id_year" required maxlength="15" value="{{ library.year }}" />  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <button type="submit" class="btn btn-success">Update</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+{% endblock body%} 
