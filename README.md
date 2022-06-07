@@ -1,5 +1,5 @@
-# library_management
-# library management system for keywordio
+# Library_management
+# Library management system for keywordio
 
 ### This library management system consists of:
 
