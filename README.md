@@ -27,9 +27,9 @@
 
 ### To access the database create a database name library in mysql using the command
 
-##create database library;
+## create database library;
 
-#Here are some screenshots:
+# Here are some screenshots:
 
 ## Home:
 ![home](https://user-images.githubusercontent.com/68159128/172387819-f9e63177-84d4-4a02-9d9e-b2522e11db14.png)
